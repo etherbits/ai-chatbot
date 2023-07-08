@@ -4,7 +4,8 @@ import { useState } from 'react';
 
 export default function Home() {
   const [prompt, setPrompt] = useState("")
-  const [messages, setMessages] = useState(["Hello"])
+  const [messages, setMessages] = useState<string[]>([])
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-black text-neutral-50 gap-8">
       AI CHATBOT
